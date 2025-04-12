@@ -323,8 +323,7 @@ nav button {
   height: 50%;
   width: 19%;
   margin-left: 75%;
-  /* margin-bottom: 5%; */
-  /* filter: drop-shadow(3px 3px 20px rgb(227, 54, 175)); */
+  
 }
 
 .box4 {
@@ -654,10 +653,6 @@ footer .questions {
 .curve-line {
   height: 100%;
   width: 100%;
-  /* z-index: 40; */
-  /* position: absolute; */
-  /* margin-top: 50%; */
-  /* background-color: purple; */
   background: linear-gradient(
     to right,
     rgb(82, 32, 55) 16%,
@@ -667,10 +662,7 @@ footer .questions {
     rgb(99, 38, 66) 84%
   );
   border-radius: 50%;
-  /* border-top-left-radius:80%;
-  border-top-right-radius:80%;
-  border-bottom-right-radius: 100%;
-  border-bottom-left-radius: 100%; */
+  
 }
 
 .curve-line-hider {
@@ -678,33 +670,13 @@ footer .questions {
   height: 100px;
   width: 100%;
   border-radius: 50%;
-  /* border-top-left-radius: 90%;
-  border-top-right-radius: 90%; */
   margin-top: -97px;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 500px) {
-  body {
-    /* background-color: aqua; */
-  }
+ 
   .mid-bottom {
     display: flex;
     flex-wrap: wrap;
@@ -899,12 +871,9 @@ footer .questions {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: max(1200px, 100vw);
-    /* position: absolute; */
-    /* background-image: url('your-image-path.png'); */
-    background-size: cover; /* Ensures the image covers the section */
-    background-position: top; /* Aligns the image from the top */
-    /* height: 80vh; Makes the section full height of the viewport */
-    /* padding-bottom: 50px; */
+  
+    background-size: cover; 
+    background-position: top; 
     position: relative; /* Make container a reference for positioning */
     /* width: fit-content; */
   }
