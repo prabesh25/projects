@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your favourite music is here.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img class="logimg" src="file (18).png" alt="Spotify">Spotify</li>
+            <li>HOME</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="not-aligned">
+        <div class="container">
+            <div class="songList">
+                <h2> Best of NCS - No Copyright Sounds</h2>
+               
+                <div class="song-item-container">
+                    <div class="songItem">
+                        <img class="rotate-one" src="covers/1.jpg" alt="1">
+                        <span class="songname">LET THE RAIN</span>
+                        <div class="songlistplay"><span class="timestamp">05:34</span><i id="0" class="ppone songItemPlay play-button fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                    <div class="songItem">
+                        <img class="rotate-two" src="covers/1.jpg" alt="1">
+                        <span class="songname">LET THE RAIN</span>
+                        <div class="songlistplay"><span class="timestamp">02:14</span><i id="1" class="pptwo songItemPlay play-button fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                    <div class="songItem">
+                        <img class="rotate-three" src="covers/1.jpg" alt="1">
+                        <span class="songname">LET THE RAIN</span>
+                        <div class="songlistplay"><span class="timestamp">03:33</span><i id="2" class="ppthree songItemPlay play-button fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                    <div class="songItem">
+                        <img class="rotate-four" src="covers/1.jpg" alt="1">
+                        <span class="songname">LET THE RAIN</span>
+                        <div class="songlistplay"><span class="timestamp">04:24</span><i id="3" class="ppfour songItemPlay play-button fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                    <div class="songItem">
+                        <img class="rotate-five" src="covers/1.jpg" alt="1">
+                        <span class="songname">LET THE RAIN</span>
+                        <div class="songlistplay"><span class="timestamp">02:44</span><i id="4" class="ppfive songItemPlay play-button fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                    <div class="songItem">
+                        <img class="rotate-six" src="covers/1.jpg" alt="1">
+                        <span class="songname">LET THE RAIN</span>
+                        <div class="songlistplay"><span class="timestamp">04:54</span><i id="5" class="ppsix songItemPlay play-button fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                    <div class="songItem">
+                        <img class="rotate-seven" src="covers/1.jpg" alt="1">
+                        <span class="songname">LET THE RAIN</span>
+                        <div class="songlistplay"><span class="timestamp">05:51</span><i id="6" class="ppseven songItemPlay play-button fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="songBanner"></div>
+        </div>
+    
+        <div class="bottom">
+            <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+            <div class="icons">
+                <!-- fontawesome icons -->
+                <i class="fas fa-3x fa-step-backward" id="previous"></i>
+                <i class="fa-regular fa-3x fa-circle-play" id="masterplay"></i>
+                <i class="fas fa-3x fa-step-forward" id="next"></i>
+            </div>
+            <div class="songInfo">
+                <img id="gif" src="playing.gif" width="42px"> <span class="mastersongname">I'm alive</span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap");
+
+body {
+  /* background-color: antiquewhite; */
+  /* background: linear-gradient(80deg, rgba(181, 18, 73, 0.648), rgba(17, 213, 227, 0.626)); */
+
+  background: linear-gradient(280deg,
+      rgba(34, 171, 189, 0.726),
+      rgba(99, 3, 255, 0.507));
+  /* background-image: url("desktop-wallpaper-retro-neon-background-new-synthwave-neon-80-s-background-rafael-web-developer.jpg"); */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
+  gap: 20px;
+  color: white;
+  list-style-type: none;
+  /* padding: 20px; */
+  height: 63px;
+  background-color: #021932f8;
+}
+
+nav ul li {
+  padding: 0 0px;
+  cursor: pointer;
+  /* font-weight: 500; */
+}
+
+nav ul li:hover {
+  color: aquamarine;
+}
+
+.brand img {
+  width: 44px;
+  /* background-color: blue; */
+  padding: 0 10px;
+}
+
+.brand {
+  padding-right: 30px;
+}
+
+.brand {
+  display: flex;
+  font-weight: bolder;
+  align-items: center;
+  font-size: 25px;
+}
+
+.bottom {
+  position: fixed;
+
+  bottom: 0px;
+  background-color: rgb(5, 0, 36, 0.9);
+  height: 110px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  margin-top: 14px;
+  cursor: pointer;
+}
+
+.icons i {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.container {
+  /* background-color: rgb(219, 219, 219); */
+  color: white;
+  /* background: linear-gradient(90deg, #00ffcc9e, #d507f9b9); */
+ 
+  min-height: 65vh;
+  box-shadow: 0px 0px 5px 3px rgba(235, 9, 88, 0.847);
+  max-width: 60%;
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  background-size: cover;
+  background-image: url(view-futuristic-person-listening-music-headphones.jpg);
+  margin: 15px auto;
+}
+
+#myProgressBar {
+  width: 80vw;
+  cursor: pointer;
+}
+
+.songItem {
+  height: 25px;
+  display: flex;
+  /* color: #00E5EE; */
+  border-radius: 25px;
+  background: linear-gradient(90deg, #00ffcc9e, #d507f9b9);
+
+  /* background-color: #31abbb63; */
+  padding: 5px 15px;
+  justify-content: space-between;
+  /* gap: 70px; */
+  align-items: center;
+  color: black;
+  /* width: 50%; */
+
+  margin: 12px 0px;
+}
+
+h2 {
+  /* background: linear-gradient(90deg, #00ffcc, #f700de); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  color: rgb(9, 241, 218);
+  /* position: absolute; */
+  /* width: 20%; */
+}
+
+.timestamp {
+  /* background-color: rgba(11, 97, 106, 0.418); */
+}
+
+.songItem span {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(9, 241, 218, 0.977);
+}
+
+.logimg {
+  border: 0px solid green;
+  border-radius: 100%;
+}
+
+.songlistplay {
+  display: flex;
+  color: #d5e8eb;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.songItem img {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.play-button {
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.song-item-container {
+  margin-top: 50px;
+}
+
+.songInfo {
+  position: absolute;
+  left: 10%;
+}
+
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+
+
+
+
+
+
+.rotate-one {
+  /* transform: scale(1) */
+  /* transform: translateX(320px); */
+  /* display:none; */
+}
+
+.rotate-two {}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@keyframes rotate0 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 525px) {
+
+  .container {
+    box-shadow: 0px 0px 5px 3px rgba(235, 9, 88, 0.847);
+    max-width: 80%;
+    /* max-height: 50vh; */
+    /* padding-bottom: 150px; */
+    /* position: absolute;
+    top: 120px; */
+    /* max-height: 30%; */
+    margin: 20px auto;
+    /* padding-top: 150px;  */
+    background-image: url("bgforphone.png");
+  }
+
+  .songItem span {
+    font-size: 12px;
+    font-weight: 500;
+    /* margin-left: -50px; */
+    color: rgba(9, 241, 218, 0.977);
+  }
+
+  .song-item-container {
+    margin-top: 185px;
+    /* margin-top: -10px; */
+  }
+
+  .songItem {
+    height: 20px;
+    display: flex;
+    /* color: #00E5EE; */
+    border-radius: 25px;
+    background: linear-gradient(90deg, #00ffcc9e, #d507f9b9);
+
+    /* background-color: #31abbb63; */
+    padding: 5px 15px;
+    justify-content: space-between;
+    /* gap: 70px; */
+    align-items: center;
+    color: black;
+    width: 70%;
+
+    margin: 8px 0px;
+  }
+
+  h2 {
+    /* background: linear-gradient(90deg, #00ffcc, #f700de); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    /* color: rgb(0, 187, 255); */
+    /* rgb(9, 241, 218) */
+    width: 60%;
+    /* background-color: red; */
+    /* color: rgba(9, 239, 216, 0.957); */
+    color: rgb(15, 220, 213);
+  }
+
+  .bottom {
+    position: fixed;
+    bottom: 0px;
+    /* margin-top: 800px; */
+    /* background-color: rgb(5, 0, 36, 0.9); */
+    height: 110px;
+    /* width: 100%; */
+    color: white;
+    /* display: flex; */
+    /* flex-direction: column;*/
+
+    background: linear-gradient(280deg,
+
+        rgba(41, 6, 97, 0.865),
+        rgba(1, 33, 37, 0.918));
+
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .songInfo {
+    position: absolute;
+    top: 15%;
+    margin: 10px;
+    left: 6%;
+    /* margin: 0 auto; */
+    /* background-color: red; */
+  }
+
+  .songInfo img {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+  }
+
+  #myProgressBar {
+    width: 85vw;
+    /* padding: 10px 0px; */
+    cursor: pointer;
+  }
+
+  .icons {
+    margin-top: 23px;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: flex;
+
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    /* gap: 30px; */
+    right: 0px;
+    color: white;
+    /* background-color: red; */
+    list-style-type: none;
+    /* padding: 20px; */
+    height: 63px;
+    background-color: #021932f8;
+  }
+
+  nav ul li {
+    padding: 0 0px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  nav ul li:hover {
+    color: aquamarine;
+  }
+
+  .brand img {
+    width: 44px;
+    /* background-color: blue; */
+    padding: 0 10px;
+  }
+
+  .brand {
+    padding-right: 30px;
+  }
+
+  .brand {
+    display: flex;
+    font-weight: bolder;
+    align-items: center;
+    font-size: 25px;
+  }
+
+}
