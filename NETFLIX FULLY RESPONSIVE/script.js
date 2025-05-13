@@ -1,4 +1,4 @@
-fconst question1 = document.querySelector(".faq-box1");
+const question1 = document.querySelector(".faq-box1");
 const paragraph1 = document.querySelector(".faq-para1");
 
 const question2 = document.querySelector(".faq-box2");
